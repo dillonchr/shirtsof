@@ -11,7 +11,6 @@ app.use(bodyParser.json({extended: false}));
 app.post('/subscribe', (req, res) => {
     try {
         const { fname, lname, email } = req.body;
-
         const apiKey = process.env.API_KEY;
         const listId = process.env.LIST_ID;
         const dataCenter = apiKey.substr(apiKey.indexOf('-') + 1);
@@ -51,7 +50,7 @@ app.post('/subscribe', (req, res) => {
     } catch(err) {
         console.error('Fetch fail', err);
         res.status(400);
-        res.send('data bad');
+        res.send('API Communication Error. Sorry.');
     }
 });
 
