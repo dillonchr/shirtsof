@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  turkeyburger:
+    env_file:
+      - .env
+    build: .
+    ports:
+      - "7723:3030"

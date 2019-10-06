@@ -1,0 +1,15 @@
+{
+  "name": "shirtsof",
+  "version": "1.0.0",
+  "description": "shirts of subscribe page",
+  "main": "index.js",
+  "repository": "https://github.com/dillonchr/shirtsof",
+  "author": "Dillon Christensen <j.dillon.christensen@gmail.com>",
+  "license": "GPL-2.0",
+  "private": false,
+  "dependencies": {
+    "@dillonchr/fetch": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

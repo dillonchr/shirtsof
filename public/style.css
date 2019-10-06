@@ -1,0 +1,80 @@
+html,
+body {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.wrapper {
+    min-width: 320px;
+    margin: 5rem auto auto;
+    max-width: 600px;
+}
+
+h1 {
+    font-family: "ITC Avant Garde", "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+}
+
+.half-n-half--separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 1rem auto;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.half-n-half {
+    display: flex;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: block;
+    font-size: 0.875rem;
+    height: 45px;
+    margin-right: 15px;
+    max-width: 315px;
+    padding: 0 15px;
+    width: calc(100% - 135px);
+}
+
+.btn {
+    min-width: 120px;
+    box-sizing: border-box;
+    height: 45px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "ITC Avant Garde", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    border-width: 0;
+    padding: 2px 15px 3px;
+    vertical-align: bottom;
+}
+
+.btn:disabled {
+    opacity: .5;
+}
+
+#notification {
+    top: 0;
+    transition: transform ease-in-out .1s;
+    transform: translateY(-100%);
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 1rem;
+    font-family: "nyt-franklin", arial, sans-serif;
+    font-weight: bold;
+    background: #7359AF;
+    color: white;
+    text-align: center;
+}
+
+#notification.notification--visible {
+    transform: translateY(0);
+}
